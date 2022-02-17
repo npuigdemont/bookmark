@@ -4,12 +4,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link href="./css/reduit.css" rel="stylesheet">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./css/reduit.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Bookmark</title>
     <link rel="icon" href="./Imagenes/favicon-32x32.png" type="image/png"/>
   </head>
+ <style>
+#btn-1:hover {
+    color: red;
+}
+#btn-2:hover {
+    color: red;
+    border-radius: 5px;
+    border: red;
+    background-color: white;
+}
+#btn-3:hover {
+    color: #5265E1;
+    border: #5265E1;
+    border-radius: 5px;
+    background-color: white;
+}
+#btn-4:hover {
+    color: black;
+    border: black;
+    background-color: white;
+}
+button#nav-profile-tab:hover {
+    color: red;
+}
+button#nav-contact-tab:hover {
+    color: red; 
+}
+#img-1 {
+    color: white;
+}
+
+
+ </style>
   <body>
     
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -23,16 +56,16 @@
         <div class="collapse navbar-collapse float-end p-2 me-0 float-md-end" id="navbarText">
           <ul class="navbar-nav float-end align-items-end justify-content-center p-2">
             <li class="nav-item float-end ps-5 ms-5">
-              <a class="nav-link active text-dark" aria-current="page" href="#">FEATURES</a>
+              <a class="nav-link active text-dark" id="btn-1" aria-current="page" href="#">FEATURES</a>
             </li>
             <li class="nav-item ps-5">
-              <a class="nav-link text-dark" href="#">PRICING</a>
+              <a class="nav-link text-dark" id="btn-1" href="#">PRICING</a>
             </li>
             <li class="nav-item ps-5">
-              <a class="nav-link text-dark" href="#">CONTACT</a>
+              <a class="nav-link text-dark" id="btn-1" href="#">CONTACT</a>
             </li>
             <li class="nav-item ps-5">
-              <a class="nav-link  btn btn-danger text-light" aria-current="page" href="#">LOGIN</a>
+              <a class="nav-link btn btn-danger text-light" id="btn-2" aria-current="page" href="#">LOGIN</a>
             </li>
           </ul>
         </div>
@@ -45,8 +78,8 @@
         <div class="col-md col-12 m-5 order-2 order-md-1">
           <h1 class="m-3 fw-bold"> A Simple Bookmark Manager</h1>
           <p class="text-secondary lh-base m-3">A clean and simple interface to organize your favourite websites. Open a new browser tab ans see your sites load instantly. Try it for free.</p>
-          <button type="button" class="btn btn-primary m-3 shadow fw-bold">Get in on Chrome</button>
-          <button type="button" class="btn btn-secondary m-3 shadow fw-bold">Get in on Firefox</button>
+          <button type="button" id="btn-3" class="btn btn-primary m-3 shadow fw-bold">Get in on Chrome</button>
+          <button type="button" id="btn-4" class="btn btn-secondary m-3 shadow fw-bold">Get in on Firefox</button>
         </div>
     <div class="col-md col-12 m-5 order-1 order-md-2">
    <img class="img-fluid float-end" src="./Imagenes/illustration-hero.svg" alt="simple bookmark">
@@ -82,7 +115,7 @@
          <div class="col-md col-12 m-5 order-2">
            <h3 class="m-3 fw-bold"> Bookmark in one click</h3>
            <p class="text-secondary lh-base m-3">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-           <button type="button" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
+           <button type="button" id="btn-3" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
          </div>
      <div class="col-md col-12 m-5 order-1">
     <img class="img-fluid float-end" src="./Imagenes/illustration-features-tab-1.svg" alt="simple bookmark" width="500" height="500">
@@ -98,7 +131,7 @@
          <div class="col-md col-12 m-5 order-2">
            <h3 class="m-3 fw-bold"> Intelligent search</h3>
            <p class="text-secondary lh-base m-3">Our powerful search feature will help you to find saved sites in no time at all. No need to trawl through all of your bookmaks.</p>
-           <button type="button" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
+           <button type="button" id="btn-3" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
          </div>
      <div class="col-md col-12 m-5 order-1">
     <img class="img-fluid float-end" src="./Imagenes/illustration-features-tab-2.svg" alt="simple bookmark" width="500" height="500">
@@ -114,7 +147,7 @@
          <div class="col-md col-12 m-5 order-2">
            <h3 class="m-3 fw-bold"> Share your bookmaks</h3>
            <p class="text-secondary lh-base m-3">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-           <button type="button" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
+           <button type="button" id="btn-3" class="btn btn-primary m-3 shadow fw-bold ">More info</button>
         
          </div>
      <div class="col-md col-12 m-5 order-1">
@@ -145,7 +178,7 @@
           <h5 class="card-title fw-bold">Add to Chrome</h5>
           <p class="card-text text-secondary">Minimum version 62</p>
           <img src="./Imagenes/bg-dots.svg" class="img-fluid" width="250">
-          <a href="#" class="btn btn-primary fw-bold ">Add & Install Extension</a>
+          <a href="#" class="btn btn-primary fw-bold" id="btn-3">Add & Install Extension</a>
         </div>
       </div>
     </div>
@@ -157,7 +190,7 @@
           <p class="card-text text-secondary">Minimum version 55</p>
           <img src="./Imagenes/bg-dots.svg" class="img-fluid" width="250">
           <br>
-          <a href="#" class="btn btn-primary fw-bold ">Add & Install Extension</a>
+          <a href="#" class="btn btn-primary fw-bold" id="btn-3">Add & Install Extension</a>
         </div>
       </div>
     </div>
@@ -168,7 +201,7 @@
           <h5 class="card-title fw-bold">Add to Opera</h5>
           <p class="card-text text-secondary">Minimum version 46</p>
           <img src="./Imagenes/bg-dots.svg" class="img-fluid" width="250">
-          <a href="#" class="btn btn-primary fw-bold">Add & Install Extension</a>
+          <a href="#" class="btn btn-primary fw-bold" id="btn-3">Add & Install Extension</a>
         </div>
       </div>
     </div>
@@ -192,7 +225,7 @@
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed fw-bold" type="button" id="btn-1" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         What is Bookmark?
       </button>
     </h2>
@@ -202,7 +235,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <button class="accordion-button collapsed fw-bold" type="button" id="btn-1" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
         How can I request a new browser?
       </button>
     </h2>
@@ -212,7 +245,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <button class="accordion-button collapsed fw-bold" type="button" id="btn-1" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
         Is there a mobile app?
       </button>
     </h2>
@@ -222,7 +255,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+      <button class="accordion-button collapsed fw-bold" type="button" id="btn-1"  data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
         Is there a mobile app?
       </button>
     </h2>
@@ -231,7 +264,7 @@
     </div>
   </div>
 </div>
-<button type="button" class="btn btn-primary m-3 shadow fw-bold">More info</button>
+<button type="button" id="btn-3" class="btn btn-primary m-3 shadow fw-bold">More info</button>
 </div>
 </div>
 </div> 
@@ -251,7 +284,7 @@
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email adress" name="email" required>
     </div>
     <div class="col-md-3 col-12 align-content-center justify-content-center">
-    <button type="submit" class="btn btn-danger mt-4">Contact Us</button>
+    <button type="submit" id="btn-2" class="btn btn-danger mt-4">Contact Us</button>
   </div>
 </form>
     </div>
@@ -261,17 +294,17 @@
   <footer class="bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
-        <a class="text-white fw-bold p-3 col-12 text-center text-md-start col-md-auto" href="#">BOOKMARK</a>
+        <a class="text-white fw-bold p-3 col-12 text-center text-md-start col-md-auto" href="#"><img id="img-1" src="./Imagenes/logo-bookmark.svg"></a>
 
         <ul class="nav me-md-auto mb-2 justify-content-center mb-md-0">
-          <li class="col-12 col-md text-center text-md-start"><a href="#" class="nav-link px-2 text-white">FEATURES</a></li>
-          <li class="col-12 col-md text-center text-md-start"><a href="#" class="nav-link px-2 text-white">PRICING</a></li>
-          <li class="col-12 col-md text-center text-md-start"><a href="#" class="nav-link px-2 text-white">CONTACT</a></li>
+          <li class="col-12 col-md text-center text-md-start" id="btn-1"><a href="#" class="nav-link px-2 text-white">FEATURES</a></li>
+          <li class="col-12 col-md text-center text-md-start" id="btn-1"><a href="#" class="nav-link px-2 text-white">PRICING</a></li>
+          <li class="col-12 col-md text-center text-md-start" id="btn-1"><a href="#" class="nav-link px-2 text-white">CONTACT</a></li>
         </ul>
 
         <div class="text-md-end text-center col-12 col-md-auto">
-          <a class="text-white p-3 mb-3" href="#"><img src="./Imagenes/icon-facebook.svg"></a>
-          <a class="text-white p-3" href="#"><img src="./Imagenes/icon-twitter.svg"></a>
+          <a class="text-white p-3 mb-3" id="btn-1" href="#"><img src="./Imagenes/icon-facebook.svg"></a>
+          <a class="text-white p-3" id="btn-1" href="#"><img src="./Imagenes/icon-twitter.svg"></a>
         </div>
       </div>
     </div>

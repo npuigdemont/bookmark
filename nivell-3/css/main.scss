@@ -26,9 +26,33 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 $component-active-color:      $white !default;
 $component-active-bg:         $primary !default;
 
-.shadow{
-    border-bottom-left-radius: 25%
-} 
+#btn-1:hover {
+    color: red;
+}
+#btn-2:hover {
+    color: red;
+    border: red;
+    background-color: white;
+}
+#btn-3:hover {
+    color: #5265E1;
+    border: #5265E1;
+    background-color: white;
+}
+#btn-4:hover {
+    color: black;
+    border: black;
+    background-color: white;
+}
+button#nav-profile-tab:hover {
+    color: red;
+}
+button#nav-contact-tab:hover {
+    color: red; 
+}
+#img-1 {
+    color: white;
+}
 
 
 
@@ -50,3 +74,30 @@ $container-max-widhts: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+#btn-1:hover {
+    color: red;
+}
+#btn-2:hover {
+    color: red;
+    border: red;
+    background-color: white;
+}
+#btn-3:hover {
+    color: #5265E1;
+    border: #5265E1;
+    background-color: white;
+}
+#btn-4:hover {
+    color: black;
+    border: black;
+    background-color: white;
+}
+button#nav-profile-tab:hover {
+    color: red;
+}
+button#nav-contact-tab:hover {
+    color: red; 
+}
+#img-1 {
+    color: white;
+}
