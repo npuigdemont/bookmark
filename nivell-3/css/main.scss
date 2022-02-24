@@ -7,32 +7,52 @@ $font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
 // scss-docs-start theme-color-variables
 $primary:       #5265E1 !default;
 $secondary:     #FA5959 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+
+
 // scss-docs-end theme-color-variables
 $enable-shadows: true;
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 5rem 5rem rgba($primary, 1.175) !default;
-$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba(#000000, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba(#000000, .075) !default;
+$box-shadow-lg:               0 5rem 5rem rgba(#000000, 1.175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba(#000000, .075) !default;
 // scss-docs-end box-shadow-variables
 
-$component-active-color:      $white !default;
-$component-active-bg:         $primary !default;
+$component-active-color:      #FFFFFF !default;
+$component-active-bg:         #5265E1 !default;
 
-#btn-1:hover {
-    color: red;
+//accordion button colors
+$accordion-button-icon:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#5267DF' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#FA5959' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+
+
+p {
+    color: gray;
 }
-#btn-2:hover {
-    color: red;
-    border: red;
+footer > a {
+    color: white;
+}
+footer > li > a:hover {
+    color: #FA5959;
+}
+a#btn-1:hover{
+    color: #FA5959;
+}
+a.nav-link:hover{
+    color: #FA5959;
+}
+button#btn-1:hover {
+    color: #FA5959;
+}
+a#btn-2 {
+    color: white;
+}
+a#btn-2:hover {
+    color: #FA5959;
+    border: #FA5959;
     background-color: white;
+
 }
 #btn-3:hover {
     color: #5265E1;
@@ -44,16 +64,43 @@ $component-active-bg:         $primary !default;
     border: black;
     background-color: white;
 }
-button#nav-profile-tab:hover {
-    color: red;
-}
-button#nav-contact-tab:hover {
-    color: red; 
-}
-#img-1 {
+a#btn-5 {
     color: white;
 }
+a#btn-5:hover {
+    color: #FA5959;
+}
+button#nav-profile-tab:hover {
+    color: #FA5959;
+}
+button#nav-contact-tab:hover {
+    color: #FA5959; 
+}
+button#nav-home-tab:hover {
+    color: #FA5959; 
+}
+footer > a {
+    color: #FFFFFF;
+}
+svg.icon:hover {
+    fill: #FA5959;
+}
+path:hover {
+    fill: #FA5959;
+}
+//shadow height: 100%; width: 100%; border-bottom-left-radius: 25%;
 
+
+//variables form input invalid
+// scss-docs-start form-feedback-variables
+
+$form-feedback-font-style:          white !default;
+$form-feedback-invalid-color:       #FA5959 !default;
+
+
+$form-feedback-icon-invalid-color:  #FA5959 !default;
+$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>") !default;
+// scss-docs-end form-feedback-variables
 
 
 //per canviar el @media sense posar-lo al html
@@ -74,30 +121,4 @@ $container-max-widhts: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-#btn-1:hover {
-    color: red;
-}
-#btn-2:hover {
-    color: red;
-    border: red;
-    background-color: white;
-}
-#btn-3:hover {
-    color: #5265E1;
-    border: #5265E1;
-    background-color: white;
-}
-#btn-4:hover {
-    color: black;
-    border: black;
-    background-color: white;
-}
-button#nav-profile-tab:hover {
-    color: red;
-}
-button#nav-contact-tab:hover {
-    color: red; 
-}
-#img-1 {
-    color: white;
-}
+

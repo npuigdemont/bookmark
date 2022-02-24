@@ -5,16 +5,29 @@
 $font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
 
 // scss-docs-start theme-color-variables
+// scss-docs-start theme-color-variables
 $primary:       #5265E1 !default;
 $secondary:     #FA5959 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+
+
 // scss-docs-end theme-color-variables
 //$enable-shadows
+
+p {
+    color: gray;
+}
+a#btn-2 {
+    color: white;
+}
+a#btn-5 {
+    color: white;
+}
+
+
+//accordion button colors
+$accordion-button-icon:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#5267DF' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#FA5959' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+
 
 
 //per canviar el @media sense posar-lo al html

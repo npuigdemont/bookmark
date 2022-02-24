@@ -7,29 +7,44 @@ $font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
 // scss-docs-start theme-color-variables
 $primary:       #5265E1 !default;
 $secondary:     #FA5959 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+
+
 // scss-docs-end theme-color-variables
 $enable-shadows: true;
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 5rem 5rem rgba($primary, 1.175) !default;
-$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba(#000000, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba(#000000, .075) !default;
+$box-shadow-lg:               0 5rem 5rem rgba(#000000, 1.175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba(#000000, .075) !default;
 // scss-docs-end box-shadow-variables
 
-$component-active-color:      $white !default;
-$component-active-bg:         $primary !default;
+$component-active-color:      #FFFFFF !default;
+$component-active-bg:         #5265E1 !default;
+
+//accordion buttons
+$accordion-button-icon:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#5267DF' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#FA5959' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 
 .shadow{
     border-bottom-left-radius: 25%
 } 
 
+p {
+    color: gray;
+}
+a#btn-2 {
+    color: white;
+}
+a#btn-5 {
+    color: white;
+}
+footer > a {
+    color: #FFFFFF;
+}
+#accordion-button:hover {
+    color:#FA5959;
+}
 
 
 //per canviar el @media sense posar-lo al html
